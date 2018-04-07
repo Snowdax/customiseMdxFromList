@@ -49,7 +49,7 @@
 下面，在弹出的程序中输入刚刚用 GetDict 生成的 .txt 格式的 `MDX 源文件`的文件名，程序会自动运行。由于程序性能目前不佳 (Python IDLE 中运行源代码速度约 2.5 秒/词，5000 词约需 3.5 小时)，故在此使用说明中测试 COCA 前 50 个单词的情况。  
 程序将在运行完毕后自动关闭。
 
-最后，在 MdxBuilder.exe 中将上一步生成的 .txt 文件 (文件名_customised.txt)转为 .mdx 格式，用于 MDict 等词典。编码格式选择 `UTF-8`。  
+最后，在 MdxBuilder.exe 中将上一步生成的 .txt 文件 (文件名_customised.txt)转为 .mdx 格式，用于 MDict 等词典。编码格式选择 `UTF-8`。  
 ![](readmePictures/mdxBuilder.png)
 
 生成的 .mdx 词库在 MDict 中的呈现：  
