@@ -22,7 +22,8 @@
 输入：刚刚生成的 .txt 文件（文件名.txt）  
 输出：文件名_customised.txt  
 功能，仅保留 COCA5000_list.py 中 wordList 中的单词。如需修改单词列表，请使用 line2list.pt 生成列表并改变 customiseMdxFromList.py 中导入的 COCA5000_list 模块  
-性能：约 2.5 秒/词，5000 词合共约 3.5 小时
+性能：约 2.5 秒/词，5000 词合共约 3.5 小时  
+![](readmePictures/result.png)
 
 最后，使用 MdxBuilder.exe 将 `文件名_customised.txt` 打包为 .mdx 文件，用于 MDict 等词典软件
 
@@ -42,14 +43,14 @@
 生成的 .txt 类型的`MDX 源文件`，应该是一行词头，一行释义，一行 `</>`，如下图所示：  
 ![](readmePictures/mdxStyle.png)
 
-接着，将刚刚生成的 .txt 文件与 customiseMdxFromList.exe 放置在同一目录下。运行该 .exe 程序 (忽略可能的安全提醒)
+接着，将刚刚生成的 .txt 文件与 customiseMdxFromList.exe 放置在同一目录下。运行该 .exe 程序 (忽略可能的安全提醒)  
 ![](readmePictures/windowsDefender.png)
 
-下面，在弹出的程序中输入刚刚用 GetDict 生成的 .txt 格式的 `MDX 源文件`，程序会自动运行。由于程序性能目前不佳 (约 2.5 秒/词，5000 词约需 3.5 小时)，故在此使用说明中测试 COCA 前 50 个单词的情况。
-![](readmePictures/result.png)
+下面，在弹出的程序中输入刚刚用 GetDict 生成的 .txt 格式的 `MDX 源文件`的文件名，程序会自动运行。由于程序性能目前不佳 (Python IDLE 中运行源代码速度约 2.5 秒/词，5000 词约需 3.5 小时)，故在此使用说明中测试 COCA 前 50 个单词的情况。  
+程序将在运行完毕后自动关闭。
 
-最后，在 MdxBuilder.exe 中将上一步生成的 .txt 文件转为 .mdx 格式，用于 MDict 等词典。编码格式选择 `UTF-8`。
+最后，在 MdxBuilder.exe 中将上一步生成的 .txt 文件 (文件名_customised.txt)转为 .mdx 格式，用于 MDict 等词典。编码格式选择 `UTF-8`。  
 ![](readmePictures/mdxBuilder.png)
 
-生成的 .mdx 词库在 MDict 中的呈现：
+生成的 .mdx 词库在 MDict 中的呈现：  
 ![](readmePictures/MDictView.png)
