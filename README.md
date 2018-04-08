@@ -12,11 +12,7 @@
 功能：将每行的内容转换为 Python 中的列表数据格式，并将其赋值给 wordList 变量。
 
 ## customiseMdxFromList.py
-首先将所需词库的 .mdx 文件在 GetDict.exe 中转换为 `MDX 源文件`，如下图所示：  
-![](readmePictures/getDict.png)
-
-生成的 .txt 类型的`MDX 源文件`，应该是一行词头，一行释义，一行 `</>`，如下图所示：  
-![](readmePictures/mdxStyle.png)
+首先将所需词库的 .mdx 文件在 GetDict.exe 中转换为 `MDX 源文件`，生成的 .txt 类型的`MDX 源文件`，应该是一行词头，一行释义，一行 `</>`
 
 接下来，就可以使用 customiseMdxFromList.py 了！  
 输入：刚刚生成的 .txt 文件（文件名.txt）  
